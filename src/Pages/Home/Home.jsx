@@ -36,23 +36,13 @@ export default function Home() {
     // Create instance object from Kit Token.
     const zp = ZegoUIKitPrebuilt.create(kitToken);
     // start the call
+    // ....
     zp.joinRoom({
-      container: element,
-      sharedLinks: [
-        {
-          name: "Personal link",
-          url:
-            window.location.protocol +
-            "//" +
-            window.location.host +
-            window.location.pathname +
-            "?roomID=" +
-            roomID,
-        },
-      ],
-      scenario: {
-        mode: ZegoUIKitPrebuilt.VideoConference,
-      },
+      // ...,
+      turnOnCameraWhenJoining: false,
+      showMyCameraToggleButton: false,
+      showAudioVideoSettingsButton: false,
+      showScreenSharingButton: false,
     });
   };
 
