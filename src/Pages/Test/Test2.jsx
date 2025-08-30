@@ -20,7 +20,7 @@ export function getUrlParams(url = window.location.href) {
   return new URLSearchParams(urlStr);
 }
 
-export default function App() {
+export default function App2() {
   const roomID = useParams().roomId;
 
   ////////////////////////////////////////// audio call setup //////////////////////////////////////////////////////////

@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "../Layouts/Dashboard";
-import Room from "../Pages/Room Page/Room";
 import VideoCallComponent from "../Pages/Test/TestPage";
 import App from "../Pages/Test/Test";
 import TestHome from "../Pages/Test/TestHome";
+import TestHome2 from "../Pages/Test/TestHome2";
+import App2 from "../Pages/Test/Test2";
 
 export const router = createBrowserRouter([
   {
@@ -16,12 +17,20 @@ export const router = createBrowserRouter([
         element: <TestHome />,
       },
       {
+        path: "/testHome",
+        element: <TestHome2 />,
+      },
+      {
+        path: "/test",
+        element: <VideoCallComponent />,
+      },
+      {
         path: "/room/:roomId",
         element: <App />,
       },
       {
-        path: "/room/:roomId",
-        element: <Room />,
+        path: "/roomssss/:roomId",
+        element: <App2 />,
       },
     ],
   },
