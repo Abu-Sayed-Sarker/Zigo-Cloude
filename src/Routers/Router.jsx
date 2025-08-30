@@ -1,7 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import Dashboard from "../Layouts/Dashboard";
-import Home from "../Pages/Home/Home";
 import Room from "../Pages/Room Page/Room";
+import VideoCallComponent from "../Pages/Test/TestPage";
+import App from "../Pages/Test/Test";
+import TestHome from "../Pages/Test/TestHome";
 
 export const router = createBrowserRouter([
   {
@@ -11,7 +13,11 @@ export const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <TestHome />,
+      },
+      {
+        path: "/room/:roomId",
+        element: <App />,
       },
       {
         path: "/room/:roomId",
